@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<stdlib.h>
 /**
  * main - print the size of various types on the computer
  *@void = Null value
