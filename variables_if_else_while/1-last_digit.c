@@ -15,7 +15,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	a = n % 10;
-	
+
 	/* your code goes there */
 	if (n == 0)
 	{
