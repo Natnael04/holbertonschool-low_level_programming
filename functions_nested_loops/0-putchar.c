@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * main - check the code.
@@ -8,12 +7,12 @@
  */
 int main(void)
 {
-	char s[] = "_putchar";
+	char s[] = "_putchar\n";
 	int i;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		putchar (s[i]);
+		_putchar (s[i]);
 	}
 	return (0);
 }
