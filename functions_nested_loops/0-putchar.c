@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main (void)
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-	char s[] = "_putchar ";
+	char s[] = "_putchar";
 	int i;
-	for (i=0; s[i] != '\0'; i++)
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		putchar (s[i]);
 	}
