@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * abs - computes the value of an integer
- * @: character to check
- * Return: Always 0
+ * _abs - computes the value of an integer
+ * @i: character to check
+ * Return: value of an integer
  */
 int _abs(int i)
 {
 
-	if(i < 0)
+	if (i < 0)
 	{
 		i = i * (-1);
 	}
-	return (i);
+	return ('i');
 
 
 }
