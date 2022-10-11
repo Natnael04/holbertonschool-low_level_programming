@@ -8,11 +8,8 @@
  */
 int add(int, int);
 {
-	int i, j, sum;
+	int i, j;
 
-	for
-		sum = i + j;
-
-	return (sum);
+	return (i + j);
 
 }
