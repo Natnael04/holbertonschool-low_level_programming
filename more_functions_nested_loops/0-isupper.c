@@ -9,7 +9,11 @@
 int _isupper(int c)
 {
 
-	if (c == 'C')
+	if (c >= 65)
+	{
+		return (1);
+	}
+	else if (c <= 90)
 	{
 		return (1);
 	}
