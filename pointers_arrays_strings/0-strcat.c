@@ -7,23 +7,24 @@
  *@src : source string
  *@dest : destination string
  *
- * Return: is dest
+ * Return: the pointer to dest
  */
 char *_strcat(char *dest, char *src)
 {
-	int i;
+	int dlen = 0, i;
 
-	int j = strlen(src) - 1;
-
-	for (j = 0; dest[j] != '\0'; j++)
+	while (dest[dlen])
 	{
+		dlen++;
+	}
 
-	for (i = 0; src[i] != '\0'; i++)
+	for (i = 0; src[i] != 0; i++)
 	{
-		dest[i + j] = src[i];
+		dest[dlen] = src[i];
+		dlen++;
 	}
-	dest[i + j] = '\0';
-	}
+
+	dest[dlen] = '\0';
 	return (dest);
 
 }
