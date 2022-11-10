@@ -4,9 +4,9 @@
 
 /**
  * free_dog - to frees dogs
- * @d: a variable to initialize
+ * @d: a pointer to struct
  *
- * Return
+ * Return:
  */
 void free_dog(dog_t *d)
 {
