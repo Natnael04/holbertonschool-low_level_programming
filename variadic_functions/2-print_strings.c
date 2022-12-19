@@ -13,13 +13,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	char *str;
 	unsigned int index;
-	va_list na;
+	va_list strings;
 
-	va_start(na, n);
+	va_start(strings, n);
 
 	for (index = 0; index < n; index++)
 	{
-		str = va_arg(na, char *);
+		str = va_arg(strings, char *);
 
 		if (str == NULL)
 			printf("(nil)");
@@ -30,6 +30,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 
-	va_end(na);
+	va_end(strings);
 
 }
