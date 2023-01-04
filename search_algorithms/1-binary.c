@@ -15,15 +15,15 @@ int binary_search(int *array, size_t size, int value)
 	int j = size - 1;
 	int mid;
 
-	while(i < j)
+	while (i < j)
 	{
-		mid = ((i + j)/2);
+		mid = ((i + j) / 2);
 		if (value == array[mid])
-			return mid;
+			return (mid);
 		else if (value < array[mid])
 			j = (mid - 1);
 		else
 			j = (mid + 1);
 	}
-	return -1;
+	return (-1);
 }
