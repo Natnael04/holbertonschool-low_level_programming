@@ -6,29 +6,28 @@
  * @array: a pointer to the first element of the array to search in
  * @value: the value to search for
  * @size: the number of elements in array
- *
+ * 
  * Return: the index or -1 if the array is not present
  */
 int binary_search(int *array, size_t size, int value) {
-    int left = 0;
-    int right = size - 1;
-    int mid;
-
+    int left, right, mid;
+    
     if (array == NULL) {
         return -1;
     }
 
-    
+    left = 0;
+    right = size - 1;
 
-    while (left <= right)
-	{
+    while (left <= right) {
         mid = left + (right - left) / 2;
 
-        printf("Searching in subarray: ");
+        printf("Searching subarray: ");
         {
             int i;
-            for (i = left; i <= right; i++){
-            printf("%d ", array[i]);}
+            for (i = left; i <= right; i++) {
+                printf("%d ", array[i]);
+            }
         }
         printf("\n");
 
@@ -43,4 +42,3 @@ int binary_search(int *array, size_t size, int value) {
 
     return -1;
 }
-
