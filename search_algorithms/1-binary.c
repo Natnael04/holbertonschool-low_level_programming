@@ -6,7 +6,6 @@
  * @array: a pointer to the first element of the array to search in
  * @value: the value to search for
  * @size: the number of elements in array
- * 
  * Return: the index or -1 if the array is not present
  */
 int binary_search(int *array, size_t size, int value)
